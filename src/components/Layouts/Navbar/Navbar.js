@@ -28,6 +28,7 @@ function Navbar() {
     }
   };
 
+  // Render Once the Signup button so it wouldnt show up anymore
   useEffect(() => {
     showButton();
   }, []);
@@ -39,35 +40,35 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar_container'>
           {/* Nav Logo */}
-          <Link to='/' className='navbar-logo'>
+          <Link to='/' className='navbar_logo' onClick={handleClick}>
             TRVL
             <i class='fab fa-typo3' />
           </Link>
 
           {/* Mobile Toggle */}
-          <div className='menu-icon' onClick={handleClick}>
+          <div className='menu_icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
 
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+          <ul className={click ? 'nav_menu active' : 'nav_menu'}>
+            <li className='nav_item'>
+              <Link to='/' className='nav_links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className='nav_item'>
               <Link
                 to='/services'
-                className='nav-links'
+                className='nav_links'
                 onClick={closeMobileMenu}
               >
                 Services
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className='nav_item'>
               <Link
                 to='/products'
-                className='nav-links'
+                className='nav_links'
                 onClick={closeMobileMenu}
               >
                 Products
@@ -77,7 +78,7 @@ function Navbar() {
             <li>
               <Link
                 to='/sign-up'
-                className='nav-links-mobile'
+                className='nav_links_mobile'
                 onClick={closeMobileMenu}
               >
                 Sign Up
@@ -87,7 +88,7 @@ function Navbar() {
           {/* End ul */}
 
           {/* Button */}
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn_outline'>SIGN UP</Button>}
 
         </div>
       </nav>
