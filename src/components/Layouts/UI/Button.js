@@ -3,10 +3,10 @@ import './Button.scss';
 import { Link } from 'react-router-dom';
 
 // Button Style Array - Classes
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
+const STYLES = ['btn_primary', 'btn_outline', 'btn_test'];
 
 // Button Sizes - Classes
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['btn_medium', 'btn_large'];
 
 // Button Properties 
 export const Button = ({
