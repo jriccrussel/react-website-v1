@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Layouts/Navbar/Navbar'
 
 import Home from './components/Pages/Home'
-import Services from './components/Pages/Home'
-import Products from './components/Pages/Home'
-import SignUp from './components/Pages/Home'
+import Services from './components/Pages/Services'
+import Products from './components/Pages/Products'
+import SignUp from './components/Pages/SignUp'
 
 function App() {
   return (

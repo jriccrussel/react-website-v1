@@ -9,11 +9,14 @@ import { HeroSection } from '../../components/Layouts/Sections/HeroSection';
 import { Cards } from '../../components/Layouts/UI/Cards';
 // import Cards from '../Layouts/UI/Cards';
 
+import { Footer } from '../../components/Layouts/Footer/Footer';
+
 function Home() {
   return (
     <>
       <HeroSection />
       <Cards />
+      <Footer />
     </>
   );
 }
