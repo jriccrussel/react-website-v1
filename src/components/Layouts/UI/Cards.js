@@ -6,9 +6,9 @@ export const Cards = () => {
     return (
       <div className='cards'>
         <h1>Check out these EPIC Destinations!</h1>
-        <div className='cards__container'>
-          <div className='cards__wrapper'>
-            <ul className='cards__items'>
+        <div className='cards_container'>
+          <div className='cards_wrapper'>
+            <ul className='cards_items'>
               <CardItem
                 src='img/img-9.jpg'
                 text='Explore the hidden waterfall deep inside the Amazon Jungle'
@@ -22,7 +22,7 @@ export const Cards = () => {
                 path='/services'
               />
             </ul>
-            <ul className='cards__items'>
+            <ul className='cards_items'>
               <CardItem
                 src='img/img-3.jpg'
                 text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
